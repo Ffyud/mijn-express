@@ -56,7 +56,7 @@ i { vertical-align: middle;}
 a:hover { text-decoration: underline;}
 
 a.href-icon:hover { color: var(--red-alert) !important; }
-.monkey { font-size: 2em; padding: 25px;}
+.monkey { font-size: 2em; padding: 25px; text-align: center;}
 .wrap {
     margin: 0px auto;
     position: relative;
