@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  mijn-website:
+    container_name: mijn-website
+    build: .
+    ports:
+      - '49160:8080'
