@@ -5,3 +5,26 @@ services:
     build: .
     ports:
       - '49160:8181'
+  swag:
+    cap_add:
+      - NET_ADMIN
+    container_name: swag
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - URL=davidduyff.nl
+      - SUBDOMAINS=www,
+      - VALIDATION=http
+      # - CERTPROVIDER= #optional
+      # - DNSPLUGIN=cloudflare #optional
+      # - DUCKDNSTOKEN=<token> #optional
+      # - ONLY_SUBDOMAINS=false #optional
+      # - EXTRA_DOMAINS=<extradomains> #optional
+      # - STAGING=false #optional
+    image: 'ghcr.io/linuxserver/swag'
+    ports:
+      - '4443:443'
+    restart: unless-stopped
+    volumes:
+      - '${PWD}/swag:/config'
