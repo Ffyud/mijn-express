@@ -4,4 +4,4 @@ services:
     container_name: mijn-website
     build: .
     ports:
-      - '49160:8080'
+      - '49160:8181'
