@@ -14,7 +14,7 @@ services:
       - PGID=1000
       - TZ=Europe/London
       - URL=davidduyff.nl
-      - SUBDOMAINS=www,test
+      - SUBDOMAINS=www
       - VALIDATION=http
     image: 'ghcr.io/linuxserver/swag'
     ports:
