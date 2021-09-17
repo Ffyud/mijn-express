@@ -28,4 +28,4 @@ services:
       - 80:80
     restart: unless-stopped
     volumes:
-      - '${PWD}/swag:/config'
+      - '${PWD}/config:/config'
