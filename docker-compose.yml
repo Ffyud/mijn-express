@@ -25,6 +25,7 @@ services:
     image: 'ghcr.io/linuxserver/swag'
     ports:
       - '4443:443'
+      - 80:80
     restart: unless-stopped
     volumes:
       - '${PWD}/swag:/config'
