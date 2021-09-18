@@ -21,5 +21,7 @@ services:
       - '443:443'
       - '80:80'
     restart: unless-stopped
+    depends_on:
+      - mijn-website
     volumes:
       - '${PWD}/swag:/config'
