@@ -5,8 +5,8 @@ const PORT = 8181;
 
 app.use('/', express.static('public'));
 
-// app.get('/', (req, res) => {
-//     res.send(`yolo`)
+// app.get('/test', (req, res) => {
+//     res.send(`Test`)
 // });
 
 app.listen(PORT, () => {
